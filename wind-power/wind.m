@@ -16,7 +16,7 @@ W3 = circshift(df(:,8:10), 3);
 p = p(3:end);
 W1 = W1(3:end,:);
 
-[xq,yq] = meshgrid(0:1:30, 0:10:359);
+[xq,yq] = meshgrid(0:0.5:30, 0:5:359);
 
 vq = griddata(W1(:,1),W1(:,2),p,xq,yq);
 
